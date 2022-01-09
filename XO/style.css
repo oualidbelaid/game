@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 129, 185);
+    flex-direction: column;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.cnt {
+    position: absolute;
+    background-color: rgba(153, 205, 50, 0.432);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cnt h2 {
+    user-select: none;
+    border: 3px solid whitesmoke;
+    padding: 10px;
+    color: #333;
+    background-color: rgba(240, 248, 255, 0.788);
+    cursor: pointer;
+}
+
+.game {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game button {
+    width: 60px;
+    color: white;
+    height: 26px;
+    font-size: 16px;
+    background-color: #d17f0e;
+    border: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.game button:active {
+    color: #d17f0e;
+    background-color: white;
+}
+
+.game h3 {
+    background-color: rgba(252, 252, 252, 0.637);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #333;
+}
+
+.game .actv {
+    background-color: rgba(255, 255, 0, 0.555);
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.651), 0 0 10px 5px rgb(255, 255, 255);
+}
+
+section {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.281);
+    backdrop-filter: blur(4px);
+    box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.486);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 6px;
+}
+
+section div {
+    width: 70px;
+    height: 70px;
+    transition: 1s;
+    background-color: rgb(255 255 255 / 26%);
+    user-select: none;
+    border-radius: 5px;
+    backdrop-filter: blur(12px);
+    border: 2px solid #ffffff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 35px;
+    color: #0774a9;
+    text-shadow: 0 0 4px #d17f0e;
+    box-shadow: 5px 5px 20px rgb(255 255 255 / 47%);
+}
